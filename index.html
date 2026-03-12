@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Session</title>
     <style>
-        /* Remove all margins and padding */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             width: 100%;
-            overflow: hidden; /* Prevents double scrollbars */
-            background-color: #000; /* Dark background while loading */
+            overflow: hidden;
+            background-color: #ffffff;
         }
-
-        /* Fill the entire screen with the iframe */
         iframe {
             position: absolute;
             top: 0;
@@ -24,13 +21,24 @@
             height: 100%;
             border: none;
         }
+        /* Optional: Loading text if the frame takes a second */
+        .loading-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: sans-serif;
+            color: #666;
+            z-index: -1;
+        }
     </style>
 </head>
 <body>
 
+    <div class="loading-text">Loading Resource...</div>
+
     <iframe 
-        src="https://www.croxyproxy.com/" 
-        allow="autoplay; fullscreen; microphone; camera"
+        src="https://duckduckgo.com/search?q=math+resources&kp=-1&kl=us-en" 
         allowfullscreen>
     </iframe>
 
